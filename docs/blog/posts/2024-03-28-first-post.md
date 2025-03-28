@@ -1,7 +1,12 @@
 ---
 date: 2024-03-28
+title: 使用 MkDocs 建立個人部落格
+description: 分享如何使用 MkDocs 和 GitHub Pages 建立一個專業的技術部落格
+authors:
+  - danielchou
 categories:
-  - 技術
+  - 技術A
+  - 技術B
 tags:
   - MkDocs
   - GitHub Pages

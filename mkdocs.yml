@@ -3,18 +3,19 @@ site_url: https://danielchou.github.io/blog
 use_directory_urls: true
 docs_dir: docs
 site_dir: site
-remote_branch: gh-pages  # 專案網站使用 gh-pages 分支
+remote_branch: gh-pages # 專案網站使用 gh-pages 分支
 
 nav:
   - 首頁: index.md
-  - 文章列表: posts/index.md
+  - 文章: blog/index.md
+  - 歸檔: archive.md
   - 分類: categories.md
   - 標籤: tags.md
+  - 作者: authors.md
 
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logo.png
   favicon: assets/images/favicon.png
   icon:
     logo: material/library
@@ -32,8 +33,64 @@ theme:
     - navigation.top
     - toc.follow
     - toc.integrate
+    - content.tabs.link
+    - navigation.indexes
+    - blog.authors
+    - blog.categories
+    - blog.archive
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切換到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切換到亮色模式
 
 plugins:
-  - blog
-  - tags
+  - blog:
+      blog_dir: blog
+      authors: true
+      authors_file: authors.md
+      archive: true
+      archive_name: 歸檔
+      archive_date_format: YYYY-MM
+      archive_toc: true
+      categories: true
+      categories_name: 分類
+      categories_file: categories.md
+      categories_url_format: "category/{slug}"
+      categories_slugify_separator: _
+      pagination: true
+      pagination_per_page: 10
+      pagination_format: "頁面 {page}/{pages}"
+      post_url_format: "{date}/{slug}"
+      post_date_format: short
+      post_slugify_separator: _
+      post_excerpt: optional
+      post_excerpt_separator: <!-- more -->
+  - tags:
+      enabled: true
+      tags_file: tags.md
+      tags_slugify_separator: _
+      tags_sort_reverse: true
+      listings: true
   - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html

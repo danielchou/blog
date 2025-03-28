@@ -1,14 +1,23 @@
+---
+title: 首頁
+description: 歡迎來到我的技術部落格
+hide:
+  - navigation
+  - toc
+template: blog.html
+---
+
 # 歡迎來到我的部落格
 
 這裡是我分享技術心得、生活感悟和各種有趣話題的地方。
 
 ## 最新文章
 
-[BLOG_POSTS]
+[Latest Posts]
 
 ## 熱門標籤
 
-[BLOG_TAGS]
+[Tags]
 
 ## 關於我
 
