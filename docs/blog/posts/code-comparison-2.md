@@ -17,7 +17,10 @@ tags:
 
 讓我們來看看在不同的程式語言中，如何實現迴圈操作。
 
+<!-- more -->
+
 === "JavaScript"
+
     ```javascript
     // JavaScript 的迴圈實現
     const array = [1, 2, 3, 4, 5];
@@ -41,11 +44,12 @@ tags:
     ```
 
 === "CSS"
+
     ```css
-    /* CSS 的循環效果 */
-    /* 使用 nth-child */
+    /_ CSS 的循環效果 _/
+    /_ 使用 nth-child _/
     .list-item:nth-child(2n) {
-        background-color: #f0f0f0;
+    background-color: #f0f0f0;
     }
 
     /* 使用 animation 循環 */
@@ -67,6 +71,7 @@ tags:
     ```
 
 === "Pseudo Code"
+
     ```txt
     // 基本迴圈邏輯的偽代碼表示
 
@@ -101,6 +106,7 @@ tags:
 3. 偽代碼：展示了最基本的迴圈邏輯結構
 
 選擇適當的迴圈方式需要考慮：
+
 - 程式碼可讀性
 - 效能影響
 - 使用場景需求

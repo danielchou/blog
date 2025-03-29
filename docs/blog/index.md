@@ -1,13 +1,10 @@
 ---
 title: 文章列表
-description: 所有部落格文章的索引頁面
-date: 2025-03-28
+description: 所有文章、分類和標籤
 hide:
-  - blog
+  - navigation
 ---
 
 # 文章列表
 
-以下是所有的部落格文章：
-
-[Latest Posts]
+這裡列出了所有的文章，按照時間倒序排列。

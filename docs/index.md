@@ -1,10 +1,9 @@
 ---
 title: 首頁
 description: 歡迎來到我的技術部落格
-hide:
-  - navigation
-  - toc
-template: blog.html
+# hide:
+#   - navigation
+#   - toc
 ---
 
 # 歡迎來到我的部落格
@@ -13,11 +12,13 @@ template: blog.html
 
 ## 最新文章
 
-[Latest Posts]
+[最新文章]
+
+[Categories]
 
 ## 熱門標籤
 
-[Tags]
+[TAGS]
 
 ## 關於我
 

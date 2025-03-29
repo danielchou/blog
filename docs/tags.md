@@ -5,5 +5,4 @@ description: 按照標籤瀏覽文章
 
 # 標籤
 
-標籤雲
-[TAGS]
+<!-- material/tags -->

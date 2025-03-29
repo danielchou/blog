@@ -17,17 +17,19 @@ tags:
 
 在前端開發中，條件渲染是一個非常常見的需求。讓我們來看看在不同語言中如何實現這個功能。
 
+<!-- more -->
+
 === "JavaScript"
 
-````javascript
-// JavaScript 的條件渲染
-function renderContent(condition) {
-if (condition) {
-return <div>條件為真時顯示</div>;
-} else {
-return <div>條件為假時顯示</div>;
-}
-}
+    ```javascript
+    // JavaScript 的條件渲染
+    function renderContent(condition) {
+        if (condition) {
+            return <div>條件為真時顯示</div>;
+        } else {
+            return <div>條件為假時顯示</div>;
+        }
+    }
 
     // 三元運算子寫法
     const content = condition ? '條件為真' : '條件為假';
@@ -37,11 +39,12 @@ return <div>條件為假時顯示</div>;
     ```
 
 === "CSS"
-```css
-/_ CSS 的條件顯示 _/
-.conditional-element {
-display: none;
-}
+
+    ```css
+    /* CSS 的條件顯示 */
+    .conditional-element {
+        display: none;
+    }
 
     .show {
         display: block;
@@ -61,12 +64,13 @@ display: none;
     ```
 
 === "HTML"
-```html
-<!-- HTML 原生的條件控制 -->
-<details>
-<summary>點擊展開</summary>
-<p>這是條件顯示的內容</p>
-</details>
+
+    ```html
+    <!-- HTML 原生的條件控制 -->
+    <details>
+        <summary>點擊展開</summary>
+        <p>這是條件顯示的內容</p>
+    </details>
 
     <!-- 使用 HTML5 data 屬性 -->
     <div data-visible="true">
@@ -89,4 +93,3 @@ display: none;
 - 效能考量
 - 維護性
 - 瀏覽器兼容性
-````
