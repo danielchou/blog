@@ -1,8 +1,6 @@
 ---
 title: 文章列表
 description: 所有文章、分類和標籤
-hide:
-  - navigation
 ---
 
 # 文章列表
