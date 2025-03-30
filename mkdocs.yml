@@ -41,14 +41,14 @@ theme:
     - blog.archive
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-7
         name: 切換到暗色模式
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: red
+      accent: red
       toggle:
         icon: material/brightness-4
         name: 切換到亮色模式
