@@ -78,12 +78,15 @@ plugins:
         - 技術B
         - C比較
         - 心得
+        - mkdocs
       authors: true
       authors_file: authors.md
   - tags:
       enabled: true
       tags_file: tags.md
   - search
+  - table-reader:
+      csv_file: table.csv
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -118,9 +121,13 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/danielchou
-  
+
   generator: false

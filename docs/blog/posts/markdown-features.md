@@ -16,20 +16,7 @@ tags:
 
 本文將展示 Material for MkDocs 提供的各種 Markdown 擴展功能。
 
-AAAAAAAAAAA
-BBBBBBBBBBBBB
-CCCCC
-
 <!-- more -->
-
-## Data Tables
-
-使用標準的 Markdown 表格語法：
-| 功能 | 支援度 | 說明 |
-| ------ | :----: | -------------------- |
-| 表格 | ★★★★★ | 完整支援 |
-| 對齊 | ★★★★☆ | 支援左中右對齊 |
-| 格式化 | ★★★★☆ | 支援大部分格式化語法 |
 
 ## Diagrams
 
@@ -56,11 +43,30 @@ sequenceDiagram
     系統-->>使用者: 登入成功
 ```
 
+## Button
+
+[Subscribe to our newsletter](#){ .md-button }
+
 ## Grids
 
 使用 CSS Grid 創建網格布局，Grid 常用於卡片式內容、產品展示、團隊介紹等場景。以下展示幾種常見用法：
 
 ### 基本卡片展示
+
+#### card grid
+
+<div class="grid cards" markdown>
+
+- :fontawesome-brands-html5: **HTML** for content and structure
+- :fontawesome-brands-js: **JavaScript** for interactivity
+- :fontawesome-brands-css3: **CSS** for text running out of boxes
+- :fontawesome-brands-internet-explorer: **Internet Explorer** ... huh?
+
+</div>
+
+
+
+#### Card grid, complex example.
 
 <div class="grid cards" markdown>
 
@@ -99,16 +105,42 @@ sequenceDiagram
 
 </div>
 
-### grid cards demo2
 
-<div class="grid cards" markdown>
 
-- :fontawesome-brands-html5: **HTML** for content and structure
-- :fontawesome-brands-js: **JavaScript** for interactivity
-- :fontawesome-brands-css3: **CSS** for text running out of boxes
-- :fontawesome-brands-internet-explorer: **Internet Explorer** ... huh?
+#### Generic grid
+
+<div class="grid" markdown>
+
+=== "Unordered list"
+
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
+
+=== "Ordered list"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+
+``` title="Content tabs"
+=== "Unordered list"
+
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
+
+=== "Ordered list"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+```
 
 </div>
+
+
+
 
 ### 產品功能展示
 
@@ -121,19 +153,29 @@ sequenceDiagram
   完美支援各種裝置尺寸
 - [:material-cog: **可擴展**](){ .md-button }
   模組化設計，易於擴充功能
+
 </div>
 
 ### 團隊成員展示
 
 <div class="grid cards" markdown>
-- ![Team Member 1](https://dummyimage.com/150x150/f5f5f5/aaa){ align=left }
-  **John Doe**
-  技術總監
-  [:material-email: Email](#)
-- ![Team Member 2](https://dummyimage.com/150x150/f5f5f5/aaa){ align=left }
-  **Jane Smith**
-  產品經理
-  [:material-email: Email](#)
+
+-  ![Team Member 1](https://dummyimage.com/150x150/f5f5f5/aaa){ align=left }
+
+    **John Doe**
+
+    技術總監
+
+    [:material-email: Email](#)
+
+-  ![Team Member 2](https://dummyimage.com/150x150/f5f5f5/aaa){ align=left }
+
+    **Jane Smith**
+
+    產品經理
+
+    [:material-email: Email](#)
+
 </div>
 
 ### 服務項目展示
@@ -141,23 +183,23 @@ sequenceDiagram
 <div class="grid cards" markdown>
 - :material-web: **網站開發**
 
-- 響應式設計
-- SEO 優化
-- 效能調校
-  [:octicons-arrow-right-24: 詳細資訊](#)
+    - 響應式設計
+    - SEO 優化
+    - 效能調校
+    [:octicons-arrow-right-24: 詳細資訊](#)
 
 - :material-mobile: **APP 開發**
 
-  - iOS/Android
-  - 跨平台解決方案
-  - UI/UX 設計
+    - iOS/Android
+    - 跨平台解決方案
+    - UI/UX 設計
     [:octicons-arrow-right-24: 詳細資訊](#)
 
 - :material-cloud: **雲端服務**
 
-  - 伺服器管理
-  - 資料備份
-  - 系統監控
+    - 伺服器管理
+    - 資料備份
+    - 系統監控
     [:octicons-arrow-right-24: 詳細資訊](#)
 
 </div>
