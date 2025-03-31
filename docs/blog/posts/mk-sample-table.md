@@ -70,7 +70,7 @@ tags:
 <script>
 async function fetchDataAndRenderTable() {
   try {
-    const response = await fetch('https://https://beow.us/static/currStockMarket.json');
+    const response = await fetch('https://beow.us/static/currStockMarket.json');
     const data = await response.json();
     
     // 创建表格
