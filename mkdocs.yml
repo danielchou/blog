@@ -8,7 +8,7 @@ remote_branch: gh-pages # 專案網站使用 gh-pages 分支
 nav:
   - 首頁: index.md
   - 文章: blog/index.md
-  - 歸檔: archive.md
+  # - 歸檔: archive.md
   - 分類: categories.md
   - 標籤: tags.md
   - 作者: authors.md
@@ -29,12 +29,11 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.path
-    - navigation.prune
+    # - navigation.prune
     - navigation.indexes
     - navigation.top
     - toc.follow
     - toc.integrate
-    - content.tabs.link
     - navigation.indexes
     - blog.authors
     - blog.categories
@@ -81,6 +80,7 @@ plugins:
         - mkdocs
       authors: true
       authors_file: authors.md
+      post_readtime: false
   - tags:
       enabled: true
       tags_file: tags.md

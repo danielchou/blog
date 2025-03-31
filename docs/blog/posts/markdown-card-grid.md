@@ -1,7 +1,7 @@
 ---
 date: 2025-03-29
-title: Material for MkDocs 功能展示
-description: 展示 Material for MkDocs 的各種 Markdown 擴展功能
+title: MkDocs的Card Grid功能展示
+description: 展示 MkDocs的Card Grid功能展示
 # authors:
 #   - danielchou
 categories:
@@ -12,36 +12,11 @@ tags:
   - 教學
 ---
 
-# Material for MkDocs 功能展示
+# Card Grid功能展示
 
 本文將展示 Material for MkDocs 提供的各種 Markdown 擴展功能。
 
 <!-- more -->
-
-## Diagrams
-
-使用 Mermaid 繪製流程圖：
-
-```mermaid
-graph LR
-    A[開始] --> B{判斷}
-    B -->|Yes| C[執行]
-    B -->|No| D[跳過]
-    C --> E[結束]
-    D --> E
-```
-
-使用 Mermaid 繪製時序圖：
-
-```mermaid
-sequenceDiagram
-    participant 使用者
-    participant 系統
-    使用者->>系統: 登入請求
-    系統-->>使用者: 要求驗證
-    使用者->>系統: 提供驗證
-    系統-->>使用者: 登入成功
-```
 
 ## Button
 
@@ -214,15 +189,6 @@ Material for MkDocs 支援多種圖示：
 - :fontawesome-regular-face-laugh: – 表情
 - :octicons-heart-fill-24: – 愛心
 
-## Emojis
-
-也支援標準的 Emoji：
-
-- 👋 打招呼
-- 🎉 慶祝
-- 💡 想法
-- 🚀 發布
-- 🔧 設定
 
 ## Images
 

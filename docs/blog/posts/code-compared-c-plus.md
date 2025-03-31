@@ -1,5 +1,5 @@
 ---
-date: 2025-04-28
+date: 2025-01-28
 title: C/C++ 語言比較
 description: 探討 C 和 C++ 的主要差異
 authors:
