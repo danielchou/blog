@@ -12,9 +12,11 @@ description: 歡迎來到我的技術部落格
 
 ## 最新文章
 
-[最新文章]
+[BLOG_POSTS]
 
-[Categories]
+## 文章分類
+
+[CATEGORIES]
 
 ## 熱門標籤
 

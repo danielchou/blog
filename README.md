@@ -5,14 +5,22 @@
 ## 專案結構
 
 ```
-blog/
-├── docs/                # 網站內容
-│   ├── assets/         # 圖片等資源
-│   ├── posts/          # 部落格文章
-│   └── index.md        # 首頁
-├── overrides/          # 主題客製化
-├── .github/workflows/  # GitHub Actions
-└── mkdocs.yml         # 配置文件
+.
+├── docs/
+│   ├── index.md           # 首頁
+│   ├── blog/
+│   │   ├── index.md       # 文章列表頁面
+│   │   ├── categories.md  # 分類頁面 (已移動到此處)
+│   │   └── posts/         # 部落格文章
+│   │       └── ....md
+│   ├── tags.md            # 標籤頁面
+│   ├── authors.md         # 作者資訊
+│   └── ...                # 其他頁面或資源
+├── overrides/             # Material 主題自定義
+├── assets/                # 靜態資源 (圖片、CSS等)
+├── mkdocs.yml             # MkDocs 配置文件
+├── requirements.txt       # Python 依賴
+└── README.md              # 本文件
 ```
 
 ## 本地開發

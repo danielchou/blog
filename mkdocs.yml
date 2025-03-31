@@ -8,8 +8,7 @@ remote_branch: gh-pages # 專案網站使用 gh-pages 分支
 nav:
   - 首頁: index.md
   - 文章: blog/index.md
-  # - 歸檔: archive.md
-  - 分類: categories.md
+  - 分類: category.md
   - 標籤: tags.md
   - 作者: authors.md
 
@@ -29,14 +28,14 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.path
-    # - navigation.prune
+    - navigation.prune
     - navigation.indexes
     - navigation.top
     - toc.follow
     - toc.integrate
     - navigation.indexes
     - blog.authors
-    - blog.categories
+    - blog.category
     - blog.archive
   palette:
     - scheme: default
@@ -57,7 +56,7 @@ plugins:
       blog_dir: blog
       blog_toc: true
       post_dir: "{blog}/posts"
-      post_date_format: full
+      post_date_format: short
       post_url_format: "{slug}"
       post_excerpt: required
       post_excerpt_separator: <!-- more -->
@@ -66,24 +65,18 @@ plugins:
       archive_date_format: YYYY-MM
       archive_url_format: "archive/{date}"
       archive_toc: true
-      categories: true
       categories_name: 分類
+      categories_allow:
+        - 技術
+        - mkdocs
+        - 教學
       categories_url_format: "category/{slug}"
       categories_toc: true
-      categories_allowed:
-        - 技術比較
-        - 技術
-        - 技術A
-        - 技術B
-        - C比較
-        - 心得
-        - mkdocs
       authors: true
       authors_file: authors.md
       post_readtime: false
   - tags:
       enabled: true
-      tags_file: tags.md
   - search
   - table-reader:
       csv_file: table.csv

@@ -5,7 +5,6 @@ description: 探討 C 和 C++ 的主要差異
 authors:
   - danielchou
 categories:
-  - C比較
   - 技術比較
 tags:
   - C
