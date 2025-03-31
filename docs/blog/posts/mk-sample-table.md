@@ -61,3 +61,45 @@ tags:
 參考 https://timvink.github.io/mkdocs-table-reader-plugin/readers/
 
 {{ read_csv('assets/csv/stock_subject.csv') }}
+
+
+### 接上外部URL JSON
+
+<div id="data-table"></div>
+
+<script>
+async function fetchDataAndRenderTable() {
+  try {
+    const response = await fetch('https://https://beow.us/static/currStockMarket.json');
+    const data = await response.json();
+    
+    // 创建表格
+    let tableHTML = '<table>';
+    
+    // 添加表头
+    tableHTML += '<thead><tr>';
+    Object.keys(data[0]).forEach(key => {
+      tableHTML += `<th>${key}</th>`;
+    });
+    tableHTML += '</tr></thead>';
+    
+    // 添加表格内容
+    tableHTML += '<tbody>';
+    data.forEach(item => {
+      tableHTML += '<tr>';
+      Object.values(item).forEach(value => {
+        tableHTML += `<td>${value}</td>`;
+      });
+      tableHTML += '</tr>';
+    });
+    tableHTML += '</tbody></table>';
+    
+    document.getElementById('data-table').innerHTML = tableHTML;
+  } catch (error) {
+    console.error('获取数据时出错:', error);
+    document.getElementById('data-table').innerHTML = '加载数据时出错';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', fetchDataAndRenderTable);
+</script>
