@@ -2,8 +2,7 @@
 date: 2025-04-21
 title: 前端開發中的條件渲染比較
 description: 探討在不同程式語言中實現條件渲染的方式
-authors:
-  - danielchou
+author: DanielChou
 categories:
   - 技術
   - 前端

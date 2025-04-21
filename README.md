@@ -77,8 +77,6 @@ nav:
 
 ---
 
-本專案採用 MkDocs 1.6+ 與 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 佈景主題打造，並採用 MkDocs 內建 blog 功能。
-
 ## 專案結構
 
 ```

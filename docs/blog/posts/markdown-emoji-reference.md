@@ -2,8 +2,7 @@
 date: 2025-03-31
 title: Emoji 完整參考指南
 description: 完整的 Emoji 表情符號參考指南，按類別分類整理
-authors:
-  - danielchou
+author: DanielChou
 categories:
   - 技術
 tags:

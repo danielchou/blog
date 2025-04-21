@@ -2,8 +2,7 @@
 date: 2025-03-29
 title: MkDocs的Card Grid功能展示
 description: 展示 MkDocs的Card Grid功能展示
-authors:
-  - danielchou
+author: DanielChou
 icon: material/emoticon-happy
 categories:
   - mkdocs

@@ -2,8 +2,7 @@
 date: 2025-01-01
 title: 第一篇文章
 description: 這是我的第一篇部落格文章
-authors:
-  - danielchou
+author: DanielChou
 categories:
   - 心得
 tags:

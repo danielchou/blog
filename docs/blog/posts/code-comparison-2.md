@@ -2,8 +2,7 @@
 date: 2025-04-21
 title: 不同程式語言的迴圈實現方式
 description: 比較不同程式語言中迴圈的寫法與使用場景
-authors:
-  - danielchou
+author: DanielChou
 categories:
   - 技術
   - 前端

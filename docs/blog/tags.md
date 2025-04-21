@@ -5,4 +5,4 @@ description: 按照標籤瀏覽文章
 
 # 標籤
 
-<!-- material/tags -->
+{{ blog_tags }}

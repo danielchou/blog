@@ -2,8 +2,7 @@
 date: 2025-03-24
 title: MkDocs 的mermaid語法展示
 description: 展示 MkDocs 的mermaid語法展示
-authors:
-  - danielchou
+author: DanielChou
 categories:
   - mkdocs
 tags:
