@@ -1,13 +1,11 @@
 ---
-date: 2025-01-28
-title: C/C++ 語言比較
+date: 2025-04-21
+title: C++ 與其他語言的比較
 description: 探討 C 和 C++ 的主要差異
 authors:
   - danielchou
 categories:
-  - 技術比較
-tags:
-  - C
+  - 技術
   - C++
   - 程式語言
 ---

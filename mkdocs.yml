@@ -8,7 +8,8 @@ remote_branch: gh-pages # 專案網站使用 gh-pages 分支
 nav:
   - 首頁: index.md
   - 文章: blog/index.md
-  - 分類: category.md
+  - 歸檔: archive.md
+  - 分類: blog/categories.md
   - 標籤: tags.md
   - 作者: authors.md
 
@@ -33,7 +34,6 @@ theme:
     - navigation.top
     - toc.follow
     - toc.integrate
-    - navigation.indexes
     - blog.authors
     - blog.category
     - blog.archive
@@ -52,48 +52,48 @@ theme:
         name: 切換到亮色模式
 
 plugins:
+  - search
   - blog:
       blog_dir: blog
+      post_dir: posts
       blog_toc: true
-      post_dir: "{blog}/posts"
       post_date_format: short
       post_url_format: "{slug}"
       post_excerpt: required
       post_excerpt_separator: <!-- more -->
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      post_excerpt_max_categories: 10
+      post_readtime: false
       archive: true
       archive_name: 歸檔
       archive_date_format: YYYY-MM
       archive_url_format: "archive/{date}"
       archive_toc: true
       categories_name: 分類
-      categories_allow:
-        - 技術
-        - mkdocs
-        - 教學
-      categories_url_format: "category/{slug}"
+      categories_url_format: "categories/{slug}"
+      categories_slugify_separator: _
       categories_toc: true
       authors: true
       authors_file: authors.md
-      post_readtime: false
-  - tags:
-      enabled: true
-  - search
-  - table-reader:
-      csv_file: table.csv
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+  - admonition
+  - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
   - attr_list
   - md_in_html
   - tables
   - def_list
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
@@ -104,8 +104,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - md_in_html
-  - footnotes
   - toc:
       permalink: true
 
@@ -116,6 +114,7 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
   - https://unpkg.com/mermaid@10.8.0/dist/mermaid.min.js
+  - https://cdn.jsdelivr.net/npm/danfojs@1.4.0/lib/bundle.min.js
 
 extra:
   social:

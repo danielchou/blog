@@ -1,6 +1,83 @@
 # DanielChou的部落格
 
-這是我的個人部落格專案，使用 MkDocs 建置，並通過 GitHub Pages 發布。
+### 文章存放路徑
+- 所有文章請放在 `docs/posts/` 目錄下，並以 Markdown 檔案儲存。
+- `mkdocs.yml` 的 `post_dir` 請設為 `posts`。
+- 本專案使用 `mkdocs-blogging-plugin` 作為部落格自動化插件。
+- 重要頁面：
+  - `docs/blog/index.md`：部落格首頁，自動列出所有文章
+  - `docs/categories.md`：自動產生分類清單
+  - `docs/archive.md`：自動產生歸檔清單
+
+## Front Matter 標準格式
+每篇文章必須有 YAML front matter，範例如下：
+
+```yaml
+---
+title: 文章標題
+date: 2025-04-21
+categories:
+  - 技術
+  - 前端
+tags:
+  - js
+  - markdown
+---
+```
+
+- `date` 必填，格式建議為 `YYYY-MM-DD`
+- `categories`、`tags` 用 YAML 陣列
+
+## blog/index.md 用法
+
+```markdown
+---
+title: 文章列表
+---
+
+# 文章列表
+
+歡迎來到部落格文章索引，以下自動列出所有文章：
+
+{{ blog_content }}
+```
+
+## 自動分類/歸檔/標籤
+- `docs/categories.md` 內容：
+  ```markdown
+  ---
+  title: 文章分類
+  ---
+  [Categories]
+  ```
+- `docs/archive.md` 內容：
+  ```markdown
+  ---
+  title: 文章歸檔
+  ---
+  [Archive]
+  ```
+
+## mkdocs.yml nav 配置建議
+
+```yaml
+nav:
+  - 首頁: index.md
+  - 文章: blog/index.md
+  - 歸檔: archive.md
+  - 分類: categories.md
+  - 標籤: tags.md
+  - 作者: authors.md
+```
+
+## 注意事項
+- 只需將文章放到 `docs/posts/`，不需手動加入 nav
+- 每篇文章都需有 `date` 欄位，否則 blog plugin 會報錯
+- 分類、標籤、歸檔、作者頁面皆自動產生
+
+---
+
+本專案採用 MkDocs 1.6+ 與 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 佈景主題打造，並採用 MkDocs 內建 blog 功能。
 
 ## 專案結構
 
@@ -10,7 +87,6 @@
 │   ├── index.md           # 首頁
 │   ├── blog/
 │   │   ├── index.md       # 文章列表頁面
-│   │   ├── categories.md  # 分類頁面 (已移動到此處)
 │   │   └── posts/         # 部落格文章
 │   │       └── ....md
 │   ├── tags.md            # 標籤頁面

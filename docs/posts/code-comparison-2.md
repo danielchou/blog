@@ -1,15 +1,14 @@
 ---
-date: 2025-02-26
+date: 2025-04-21
 title: 不同程式語言的迴圈實現方式
 description: 比較不同程式語言中迴圈的寫法與使用場景
 authors:
   - danielchou
 categories:
-  - 技術比較
-tags:
-  - JavaScript
+  - 技術
+  - 前端
+  - 程式語言
   - CSS
-  - 程式設計
   - 迴圈
 ---
 

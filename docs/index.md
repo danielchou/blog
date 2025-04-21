@@ -12,7 +12,7 @@ description: 歡迎來到我的技術部落格
 
 ## 最新文章
 
-[BLOG_POSTS]
+[blog posts]
 
 ## 文章分類
 

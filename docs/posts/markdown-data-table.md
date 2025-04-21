@@ -2,8 +2,8 @@
 date: 2025-03-30
 title: Data Table 基本用法
 description: 展示 Material for MkDocs 的Data Table 擴展功能
-# authors:
-#   - danielchou
+authors:
+  - danielchou
 categories:
   - mkdocs
 tags:
